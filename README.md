@@ -1,5 +1,5 @@
 ### Pseudocode
-
+```
 //----------------------General HTML Layout--------------------------------
 // General HTML Layout
 //      -NavBar (title)
@@ -57,9 +57,7 @@
 //              -to retrieve weather data for cities
 //          -CSS file - very little as bootstrap will be leveraged
 //          -Bootstrap Components and Utilities
-
-
-
+```
 
 # 06 Server-Side APIs: Weather Dashboard
 
