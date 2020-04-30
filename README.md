@@ -2,33 +2,33 @@
 ```
 //----------------------General HTML Layout--------------------------------
 // General HTML Layout
-//      -NavBar (title)
-//          -Top of browser
-//          -"Weather Dashboard"
-//          -Dark Gray background
-//          -White font-color
+//      -NavBar (title) x
+//          -Top of browser x
+//          -"Weather Dashboard" x
+//          -Dark Gray background x
+//          -White font-color x
 //      -Card that includes (search & city listing)
-//          -"Search for City:"
-//          -Search input box w/ magnifying glass icon
-//          -Below the search input box is a list of cities in cells format
-//              -this is where the cities will be saved and displayed per the users search history
+//          -"Search for City:" x
+//          -Search input box w/ magnifying glass icon x
+//          -Below the search input box is a list of cities in cells format x
+//              -this is where the cities will be saved and displayed per the users search history x
 //      -Card that includes (current city data)
-//          -City Name + (date) + icon of current weather (h1?)
-//          -Temperature: 90.9 F (in farenheit) (h2?)
-//          -Humidity: 41% (h2?)
-//          -Wind Speed: 4.7 MPH (h2?)
-//          -UV Index: 9.49 (h2? + value is in colored box depending o high (red) vs low value (tbd))
-//          -Light gray border around this section of the card
-//      -Card that includes (5-day forecast)
-//          -located directly below above section
-//          -"5-Day Forecast:" is the title
-//          -has cards/boxes for each day
-//              -cards have blue background
-//              -contain the following data points:
-//                  -date (h1) (8/16/2019)
-//                  -icon of expected weather condition
-//                  -temperature: (h2) "Temp: 86.84 F"
-//                  -humidity: (h2) "33%"
+//          -City Name + (date) + icon of current weather (h1?) x
+//          -Temperature: 90.9 F (in farenheit) (h2?) x
+//          -Humidity: 41% (h2?) x
+//          -Wind Speed: 4.7 MPH (h2?) x
+//          -UV Index: 9.49 (h2? + value is in colored box depending o high (red) vs low value (tbd)) x
+//          -Light gray border around this section of the card x
+//      -Card that includes (5-day forecast) x
+//          -located directly below above section x
+//          -"5-Day Forecast:" is the title x
+//          -has cards/boxes for each day x
+//              -cards have blue background x
+//              -contain the following data points: x
+//                  -date (h1) (8/16/2019) x
+//                  -icon of expected weather condition x
+//                  -temperature: (h2) "Temp: 86.84 F" x
+//                  -humidity: (h2) "33%" x
 //------------------------JavaScript Code-----------------------------------
 // Functions that I will need
 //      -NavBar: No code required
@@ -50,6 +50,7 @@
 //          -link to Bootstrap - Header
 //          -link to Javascript file - Bottom Body
 //          -link to CSS file - Header under Bootstrap link
+//          -link to Font Awesome - Header under Bootstrap
 //      -Javascript file to contain all of my code and logic and functionality of the app
 //          -use of Local Storage to retain city search history
 //          -use of jQuery to fill-in/apply the HTML elements
