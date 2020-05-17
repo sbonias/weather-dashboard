@@ -1,8 +1,8 @@
-### Server-Side APIs: Weather Dashboard
+# Server-Side APIs: Weather Dashboard
 
 ## Description
 
-Developed a weather dashboard that retrieves data from the [OpenWeather API](https://openweathermap.org/api) and allows for user specified city searches that returns the weather for the current day in addition to a 5 day forecast. The city search is logged and retained so the user is able to view the cities they have searched. The application also displays icons representing the weather for enhanced visual presentation.
+Developed a weather dashboard that retrieves data from the OpenWeather API and allows for user specified city searches that returns the weather for the current day in addition to a 5 day forecast. The city search is logged and retained so the user is able to view the cities they have searched. The application also displays icons representing the weather for enhanced visual presentation.
 
 ## Deployed Application
 
@@ -38,7 +38,7 @@ THEN I am presented with the last searched city forecast
 
 ## Visual Presentation
 
-<iframe src="https://drive.google.com/file/d/1BJFHHJzWvm74pxc5NIK_KibPn9-BBX4m/preview" width="640" height="480"></iframe>
+https://drive.google.com/file/d/1BJFHHJzWvm74pxc5NIK_KibPn9-BBX4m/view?usp=sharing
 
 ## Pseudocode
 
@@ -79,15 +79,15 @@ THEN I am presented with the last searched city forecast
 //      -Function to capture City Search
 //          -Search functionality for city search
 //          -Event Listener to capture city name that was input
-//          -Save to Local Storage for city search history
+//          -Save to Local Storage for city search history (OUTSTANDING)
 //          -jQuery to dynamically output city name
 //      -Function to output Current City Data
 //          -jQuery to dynamically output data points using the called data
 //      -Function to output 5-Day Forecast
 //          -jQuery to dynamically output data point using the call data
 //      -Function to convert degrees from C to F
-//      -Function to apply colored background to UV Index depending on high vs low
-//      -Bonus: Add your current city's data on page load
+//      -Function to apply colored background to UV Index depending on high vs low (OUTSTANDING)
+//      -Bonus: Add your current city's data on page load (OUTSTANDING)
 //------------------------System Requirements--------------------------------
 // What I need for this to work:
 //      -HTML file to contain all of the general layout identified under "General HTML Layout"
@@ -100,5 +100,4 @@ THEN I am presented with the last searched city forecast
 //          -use of Local Storage to retain city search history
 //          -use of jQuery to fill-in/apply the HTML elements
 //          -use of server side API code to link to https://openweather.org/api
-
 ```
