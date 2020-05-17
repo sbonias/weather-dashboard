@@ -1,70 +1,14 @@
-### Pseudocode
-```
-//----------------------General HTML Layout--------------------------------
-// General HTML Layout
-//      -NavBar (title) x
-//          -Top of browser x
-//          -"Weather Dashboard" x
-//          -Dark Gray background x
-//          -White font-color x
-//      -Card that includes (search & city listing)
-//          -"Search for City:" x
-//          -Search input box w/ magnifying glass icon x
-//          -Below the search input box is a list of cities in cells format x
-//              -this is where the cities will be saved and displayed per the users search history x
-//      -Card that includes (current city data)
-//          -City Name + (date) + icon of current weather (h1?) x
-//          -Temperature: 90.9 F (in farenheit) (h2?) x
-//          -Humidity: 41% (h2?) x
-//          -Wind Speed: 4.7 MPH (h2?) x
-//          -UV Index: 9.49 (h2? + value is in colored box depending o high (red) vs low value (tbd)) x
-//          -Light gray border around this section of the card x
-//      -Card that includes (5-day forecast) x
-//          -located directly below above section x
-//          -"5-Day Forecast:" is the title x
-//          -has cards/boxes for each day x
-//              -cards have blue background x
-//              -contain the following data points: x
-//                  -date (h1) (8/16/2019) x
-//                  -icon of expected weather condition x
-//                  -temperature: (h2) "Temp: 86.84 F" x
-//                  -humidity: (h2) "33%" x
-//------------------------JavaScript Code-----------------------------------
-// Functions that I will need
-//      -NavBar: No code required
-//      -AJAX API request and return Code
-//          -Need to make request to the website API to return data points in the form of object/arrays
-//      -City listing
-//          -Search functionality for city search
-//          -Save Local Storage for history of city search
-//          -jQuery to dynamically output city name
-//      -Current City Data
-//          -jQuery to dynamically output data points using the called data
-//      -5-Day Forecast
-//          -jQuery to dynamically output data point using the calle data
-//      -Bonus: Add your current city's data on page load
-//------------------------System Requirements--------------------------------
+### Server-Side APIs: Weather Dashboard
 
-// What I need for this to work:
-//      -HTML file to contain all of the general layout identified under "General HTML Layout"
-//          -link to Bootstrap - Header
-//          -link to Javascript file - Bottom Body
-//          -link to CSS file - Header under Bootstrap link
-//          -link to Font Awesome - Header under Bootstrap
-//      -Javascript file to contain all of my code and logic and functionality of the app
-//          -use of Local Storage to retain city search history
-//          -use of jQuery to fill-in/apply the HTML elements
-//          -use of server side API code to link to https://openweather.org/api
-//              -to retrieve weather data for cities
-//          -CSS file - very little as bootstrap will be leveraged
-//          -Bootstrap Components and Utilities
-```
+## Description
 
-# 06 Server-Side APIs: Weather Dashboard
+Developed a weather dashboard that retrieves data from the [OpenWeather API](https://openweathermap.org/api) and allows for user specified city searches that returns the weather for the current day in addition to a 5 day forecast. The city search is logged and retained so the user is able to view the cities they have searched. The application also displays icons representing the weather for enhanced visual presentation.
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Deployed Application
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+- https://sbonias.github.io/weather-dashboard/
+
+- https://github.com/sbonias/weather-dashboard
 
 ## User Story
 
@@ -92,17 +36,69 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 
-The following image demonstrates the application functionality:
+## Visual Presentation
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
+<iframe src="https://drive.google.com/file/d/1BJFHHJzWvm74pxc5NIK_KibPn9-BBX4m/preview" width="640" height="480"></iframe>
 
-## Review
+## Pseudocode
 
-You are required to submit the following for review:
+```
+//----------------------General HTML Layout--------------------------------
+// General HTML Layout
+//      -NavBar (title)
+//          -Top of browser
+//          -"Weather Dashboard"
+//          -Dark Gray background
+//          -White font-color
+//      -Card that includes (search & city listing)
+//          -"Search for City:"
+//          -Search input box w/ magnifying glass icon
+//          -Below the search input box is a list of cities in cells format
+//              -this is where the cities will be saved and displayed per the users search history
+//      -Card that includes (current city data)
+//          -City Name + (date) + icon of current weather (h1?)
+//          -Temperature: 90.9 F (in farenheit) (h2?)
+//          -Humidity: 41% (h2?)
+//          -Wind Speed: 4.7 MPH (h2?)
+//          -UV Index: 9.49 (h2? + value is in colored box depending on high (red) vs low value (green))
+//          -Light gray border around this section of the card
+//      -Card that includes (5-day forecast)
+//          -located directly below above section
+//          -"5-Day Forecast:" is the title
+//          -has cards/boxes for each day
+//              -cards have blue background
+//              -contain the following data points:
+//                  -date (h1) (8/16/2019)
+//                  -icon of expected weather condition
+//                  -temperature: (h2) "Temp: 86.84 F"
+//                  -humidity: (h2) "33%"
+//------------------------JavaScript Code-----------------------------------
+// Functions that I will need
+//      -Function to handle AJAX API request and return
+//          -to retrieve weather data for Current Day Forecast as well as Future Forecast (5 days)
+//      -Function to capture City Search
+//          -Search functionality for city search
+//          -Event Listener to capture city name that was input
+//          -Save to Local Storage for city search history
+//          -jQuery to dynamically output city name
+//      -Function to output Current City Data
+//          -jQuery to dynamically output data points using the called data
+//      -Function to output 5-Day Forecast
+//          -jQuery to dynamically output data point using the call data
+//      -Function to convert degrees from C to F
+//      -Function to apply colored background to UV Index depending on high vs low
+//      -Bonus: Add your current city's data on page load
+//------------------------System Requirements--------------------------------
+// What I need for this to work:
+//      -HTML file to contain all of the general layout identified under "General HTML Layout"
+//          -link to Bootstrap - Header
+//          -link to CSS file - Header under Bootstrap link
+//          -link to Font Awesome - Header under Bootstrap
+//          -link to Javascript file - Body
+//          -link to moment.js library - Body
+//      -Javascript file to contain all of my code and logic and functionality of the app
+//          -use of Local Storage to retain city search history
+//          -use of jQuery to fill-in/apply the HTML elements
+//          -use of server side API code to link to https://openweather.org/api
 
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+```
