@@ -124,10 +124,16 @@ $("#city-input").on("click", function () {
     });
   }
   forecast();
+
+  // -----Create City Search History Function-----------------
+  function createCityListing() {
+    var cityListing = $("<li>").addClass("list-group-item").text(cityInput);
+    $(".list-group").append(cityListing);
+    console.log(cityListing);
+  }
+  createCityListing();
 });
 
 // -----City Search Save to Local Storage Function------------
-
-// -----Append City Searched to City History Listing Function-
 
 // -----Output Current City Data on Page Load-----------------
