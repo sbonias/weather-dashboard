@@ -86,7 +86,7 @@ https://drive.google.com/file/d/1BJFHHJzWvm74pxc5NIK_KibPn9-BBX4m/view?usp=shari
 //      -Function to output 5-Day Forecast
 //          -jQuery to dynamically output data point using the call data
 //      -Function to convert degrees from C to F
-//      -Function to apply colored background to UV Index depending on high vs low (OUTSTANDING)
+//      -Function to apply colored background to UV Index depending on high vs low
 //      -Bonus: Add your current city's data on page load (OUTSTANDING)
 //------------------------System Requirements--------------------------------
 // What I need for this to work:
@@ -100,4 +100,5 @@ https://drive.google.com/file/d/1BJFHHJzWvm74pxc5NIK_KibPn9-BBX4m/view?usp=shari
 //          -use of Local Storage to retain city search history
 //          -use of jQuery to fill-in/apply the HTML elements
 //          -use of server side API code to link to https://openweather.org/api
+//          -use of uv index scale via https://en.wikipedia.org/wiki/Ultraviolet_index
 ```
